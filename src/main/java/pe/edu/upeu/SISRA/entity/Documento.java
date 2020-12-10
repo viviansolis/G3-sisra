@@ -1,17 +1,18 @@
 package pe.edu.upeu.SISRA.entity;
 
+import java.sql.Date;
+
 public class Documento {
 
 	private int id_docu;
-	private String f_registro;
+	private Date  f_registro;
 	private String url;
 	private String estado;
 	private String codigo;
 	private int tipo_documento_id_doc_tipo;
-	private int asociacion_id_asc;
+	private int asociacion_id_asoc;
 	private int id_ult_rev;
 	private String categoria;
-	
 	
 	
 	
@@ -22,28 +23,9 @@ public class Documento {
 
 
 
-
-	public Documento(int id_docu, String f_registro, String url, String estado, String codigo,
-			int tipo_documento_id_doc_tipo, int asociacion_id_asc, int id_ult_rev, String categoria) {
-		super();
-		this.id_docu = id_docu;
-		this.f_registro = f_registro;
-		this.url = url;
-		this.estado = estado;
-		this.codigo = codigo;
-		this.tipo_documento_id_doc_tipo = tipo_documento_id_doc_tipo;
-		this.asociacion_id_asc = asociacion_id_asc;
-		this.id_ult_rev = id_ult_rev;
-		this.categoria = categoria;
-	}
-
-
-
-
 	public int getId_docu() {
 		return id_docu;
 	}
-
 
 
 
@@ -53,18 +35,15 @@ public class Documento {
 
 
 
-
-	public String getF_registro() {
+	public Date getF_registro() {
 		return f_registro;
 	}
 
 
 
-
-	public void setF_registro(String f_registro) {
+	public void setF_registro(Date f_registro) {
 		this.f_registro = f_registro;
 	}
-
 
 
 
@@ -74,11 +53,9 @@ public class Documento {
 
 
 
-
 	public void setUrl(String url) {
 		this.url = url;
 	}
-
 
 
 
@@ -88,11 +65,9 @@ public class Documento {
 
 
 
-
 	public void setEstado(String estado) {
 		this.estado = estado;
 	}
-
 
 
 
@@ -102,11 +77,9 @@ public class Documento {
 
 
 
-
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-
 
 
 
@@ -116,25 +89,21 @@ public class Documento {
 
 
 
-
 	public void setTipo_documento_id_doc_tipo(int tipo_documento_id_doc_tipo) {
 		this.tipo_documento_id_doc_tipo = tipo_documento_id_doc_tipo;
 	}
 
 
 
-
-	public int getAsociacion_id_asc() {
-		return asociacion_id_asc;
+	public int getAsociacion_id_asoc() {
+		return asociacion_id_asoc;
 	}
 
 
 
-
-	public void setAsociacion_id_asc(int asociacion_id_asc) {
-		this.asociacion_id_asc = asociacion_id_asc;
+	public void setAsociacion_id_asoc(int asociacion_id_asoc) {
+		this.asociacion_id_asoc = asociacion_id_asoc;
 	}
-
 
 
 
@@ -144,11 +113,9 @@ public class Documento {
 
 
 
-
 	public void setId_ult_rev(int id_ult_rev) {
 		this.id_ult_rev = id_ult_rev;
 	}
-
 
 
 
@@ -158,13 +125,24 @@ public class Documento {
 
 
 
-
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
-	
-	
-	
-	
-	
+
+
+
+	public Documento(int id_docu, Date f_registro, String url, String estado, String codigo,
+			int tipo_documento_id_doc_tipo, int asociacion_id_asoc, int id_ult_rev, String categoria) {
+		super();
+		this.id_docu = id_docu;
+		this.f_registro = f_registro;
+		this.url = url;
+		this.estado = estado;
+		this.codigo = codigo;
+		this.tipo_documento_id_doc_tipo = tipo_documento_id_doc_tipo;
+		this.asociacion_id_asoc = asociacion_id_asoc;
+		this.id_ult_rev = id_ult_rev;
+		this.categoria = categoria;
+	}
 }
+
